@@ -342,6 +342,59 @@
 
 
 
+# collection (counter ,nametuple,Ordereddic,defaultdic,deque)
+#counter
+# from collections import Counter
+# str="aaaaabbbcccc"
+# my_counter=Counter(str) # this return counter contain dic which contain (element,occerence)
+# print(my_counter)
+# print(my_counter.items())
+# print(my_counter.keys())
+# print(my_counter.most_common(1)) # this return list with most occerence
+
+
+# from collections import namedtuple
+# # it is a dic type struct where key value is hashed to perticuler value but we can acces ele with key and iterable
+# # this make class like struct first paremter as class name and second is iterable class parameter name
+# Point= namedtuple('Point','x,y,z')
+# Std=namedtuple('Std',["name","age","mark"])
+# std=namedtuple('std',"name,age,mark")
+# print(std("omkar",20,30))
+# pt=Point(1,2,"ashdv")
+# print(pt.x,pt.y,pt.z)
+# print(pt[0],pt[1],pt[2])
+
+# Ordereddic is a normal dic with can remember order in which element are inserted
+# new python version nornal dic is also capable of above thing
+# from collections import OrderedDict
+# ordered_dic=OrderedDict()
+# ordered_dic['b']=6
+# ordered_dic['c']=9
+# ordered_dic['a']=1
+# print(ordered_dic)
+
+# defaultdic is similer to dic but if we assces key which is not present than it return default value rather than Error
+# from collections import defaultdict
+# de_dic=defaultdict(int) # in bracket we give type of default value in case of int it it 0 int flaot 0.0
+# de_dic['a']=1
+# de_dic['b']=2
+# print(de_dic['c']) # this give 0 rather than Error
+
+
+# deque doubley ended queue
+# from collections import deque
+# dq=deque()
+# dq.append(1)
+# dq.append(2)
+# dq.append(3)
+# dq.appendleft(4)
+# dq.appendleft(5)
+# print(dq)
+# dq.pop()
+# print(dq)
+# dq.popleft()
+# print(dq)
+
 
 
 
