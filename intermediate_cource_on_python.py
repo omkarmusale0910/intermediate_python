@@ -41,7 +41,7 @@
 # print(a)
 # a=list[:3]
 # print(a)
-# a=list[0::2]  # with ::num   here num is step size defeult step_size ids 1
+# a=list[0::2]  # with ::num   here num is step size defeult step_size is 1
 # print(a)
 # a=list[::-1]  # this can be used as shortcut to reverse the list
 # print(a)
@@ -51,7 +51,7 @@
 
 # coping a list
 # when we used assigement oprator than both list refer to same memory location
-# chaneges in one list update other list as well
+# changes in one list update other list as well
 
 # list_cpy=list
 # list_cpy.append(10);  # we can write semocolen (it is not mandetory)
@@ -109,7 +109,7 @@
 # slicing intuple
 # print(tup[1:])
 
-# unpaking methodology in python
+# unpacking methodology in python
 # LL=[1,2,3,4,5,6]
 # i1,i2,i3,*i4=LL  # if we used * than it takes all element remaing
 # # other than reameing variable  * is used when number of variable on left is less than right
@@ -133,7 +133,7 @@
 # dic.pop("email")
 # print(dic)
 # in python 3.7 only this avaible
-# dic.popitem() # this pop last item which is added added
+# dic.popitem() # this pop last item which is added
 
 # checking if key is present or not
 # if "name" in dic:
@@ -158,7 +158,7 @@
 
 # while coping dic
 # dic_cpy=dic
-# both variable point to the same location in memory there fore
+# both variable point to the same location in memory therefore
 # change in one cause change in other also
 
 # dic_cpy=dic.copy()
@@ -174,7 +174,7 @@
 # print(dic3)
 
 # #### IMP data type of key must be(tuple,string,int)
-# it not list as a key because it can change and key must be inmutable
+# it not list as a key because it can change and key must be immutable
 
 
 # set  it is a unordered ,mutable and strore unique element
@@ -191,7 +191,7 @@
 # set1=set()
 # print(type(set1))
 
-# add an remove element from set
+# add and remove element from set
 # add
 # S1.add(4)
 # S1.add(5)
@@ -199,10 +199,10 @@
 # print(S1)
 #
 # S1.remove(4)
-# # S1.remove(6) # is value is not present in set and we want to remove then it throw an error
+# # S1.remove(6) # if value is not present in set & we want to remove then it throw an error
 # # there is another method to delete value from set
 # S1.discard(1)
-# S1.discard(9) # 9 is not present in set also it dose not throw an error
+# S1.discard(9) # 9 is not present in set also it does not throw an error
 # print(S1)
 
 # iterate over set with
@@ -224,7 +224,7 @@
 # diff=odd.difference(prime)
 # print(diff)
 
-# c=even+odd  + concatination only work on list
+# c=even+odd  + concatination only work on list here it gives as error
 # print(c)
 
 # # subset and super set
@@ -248,7 +248,7 @@
 # print(U)
 # print(u)
 
-# frozenset this set is imutable update can not work only intersection,union operation is work
+# frozenset this set is immutable update can not work only intersection,union operation is work
 # fs=frozenset([1,2,3,4,5])
 # print(fs)
 
@@ -264,9 +264,9 @@
 # S3="omkar prakash Musale"
 # print(S3)
 
-# mutiline_text="""my name is omker
-# i am a good  boy
-# i live in pune near Akurdi """
+# mutiline_text="""My name is omker
+# I am a good  boy
+# I live in pune near Akurdi """
 # print(mutiline_text)
 
 # S1[0]='O' # this line give an error updation is not possible (Immutable)
