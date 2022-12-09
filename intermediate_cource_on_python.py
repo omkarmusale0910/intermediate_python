@@ -81,7 +81,7 @@
 
 
 # tuple this are unmutable
-tup=("omkar",20,True) # here parenthisisi is optional tup="omkar",20,True
+# tup=("omkar",20,True) # here parenthisisi is optional tup="omkar",20,True
 # print(tup)
 # # if you want to create tuple with single element than
 # tup1=("omkar")
@@ -175,6 +175,91 @@ tup=("omkar",20,True) # here parenthisisi is optional tup="omkar",20,True
 
 # #### IMP data type of key must be(tuple,string,int)
 # it not list as a key because it can change and key must be inmutable
+
+
+# set  it is a unordered ,mutable and strore unique element
+# declearation of set is done as fllowing two ways
+# s1=set([1,2,3])
+# S1={1,2,3,1,2} #here only single element is present rather than key value as in dic and element is seprated by ,
+# # and all element is in {} this bracket
+# print(S1) # print{1,2,3} not print{1,2,3,1,2} only store unique element
+
+# # if we want to declear set with no element than
+# set1={}
+# print(type(set1)) # this treate as a dictionery
+# # correct way
+# set1=set()
+# print(type(set1))
+
+# add an remove element from set
+# add
+# S1.add(4)
+# S1.add(5)
+# S1.add(4)
+# print(S1)
+#
+# S1.remove(4)
+# # S1.remove(6) # is value is not present in set and we want to remove then it throw an error
+# # there is another method to delete value from set
+# S1.discard(1)
+# S1.discard(9) # 9 is not present in set also it dose not throw an error
+# print(S1)
+
+# iterate over set with
+# for i in S1:
+#     print(i,end=" ")
+# else:
+#     print()
+
+# even={0,2,4,6,8,10}
+# odd={1,3,5,7,9}
+# prime={2,3,5,7}
+# # unoion of set
+# u= even.union(odd)
+# print(u)
+# # intersection of set
+# i=even.intersection(prime)
+# print(i)
+# # set diff setA-setB
+# diff=odd.difference(prime)
+# print(diff)
+
+# c=even+odd  + concatination only work on list
+# print(c)
+
+# # subset and super set
+# print(u.issuperset(odd))
+# print(even.issubset(u))
+#
+# # finding sets are disjoint or not
+# inter_even_odd=even.intersection(odd)
+# print(inter_even_odd==set())
+# # or with disjoint method
+# if even.isdisjoint(odd):
+#     print("Yes")
+
+# # copying set
+# # U=u  # this both  pointing to same memory location
+# # change in one set can cause change in another set
+# # correct method is
+# # U=u.copy()
+# U=set(u)
+# U.add(100)
+# print(U)
+# print(u)
+
+# frozenset this set is imutable update can not work only intersection,union operation is work
+# fs=frozenset([1,2,3,4,5])
+# print(fs)
+
+
+
+
+
+
+
+
+
 
 
 
