@@ -253,19 +253,91 @@
 # print(fs)
 
 
+# ----- string -------- ordered , immutable
+# # it can be in single quote double quote and triple-double quote for multi line text
+# S1='omkar musael is my name \'' # "omkar musael is my name '"
+# # in double quote single quote can be write without excape charater '\' wice versa
+# print(S1)
+# S2='omkar "'
+# print(S2)
+
+# S3="omkar prakash Musale"
+# print(S3)
+
+# mutiline_text="""my name is omker
+# i am a good  boy
+# i live in pune near Akurdi """
+# print(mutiline_text)
+
+# S1[0]='O' # this line give an error updation is not possible (Immutable)
+# slicing of a string
+# substring=S1[6:]
+# print(substring)
+# # reverse the string with sliceing oprator
+# reverser_S3=S3[::-1]
+# print(reverser_S3)
+
+# fname,lname="omkar","musale"
+# name=fname+" "+lname
+# print(name)
+
+# we can check a substring is or not
+# if "mka" in S3:
+#     print("yes")
+
+# or use find method is not present return -1 ya return starting index of find substring
+# print(S3.find("kar"))
+
+# string_list=S3.split() # default argumet is " " space
+# print(string_list)
+# #S3.split()==S3.split(" ")   # this is not same is S3=" omkar   musale"
+# # than first return ["omkar","musale"] and
+# # second return ["omkar", " " ,"musale"]
+# SS3="omkar,prakash,musale"
+# string_list_SS3=SS3.split(",")
+# print(string_list_SS3)
+# print(','.join(S3.split()))
+# print(' " '.join(S3.split()))
+
+# importing time_fun library
+# from timeit import default_timer as timer
+#
+# my_list=['omkar']*1000000
+# # here we are proving join() method is much faster then + concat opration
+# start=timer()
+# my_str=''
+# for i in my_list:
+#     my_str+=i
+# stop=timer()
+# print(stop-start) # first opration time
+#
+# start=timer()
+# my_str=''.join(my_list)
+# stop=timer()
+# print(stop-start)
 
 
+# formating in string
+# % ,.format() , new_python version f-Strings
 
-
-
-
-
-
-
-
-
-
-
+# var="omkar"
+# var2=312
+# var1=3.124584
+# my_var1="%s is good boy"%var
+# print(my_var1)
+# my_var2="%d value of sound speed"%var2
+# print(my_var2)
+# my_var3="the value of pi is %.2f"%var1
+# print(my_var3)
+#
+# # another way of formating
+# my_string="this is a value of pi {:.3f} and value of sound speed is {}".format(var1,var2)
+# print(my_string)
+#
+#
+# # newest way for formatting and one of the easiest way of formatting
+# my_string= f"my name is {var} value of PI {var1} and value of sound_speed is {var2}"
+# print(my_string)
 
 
 
