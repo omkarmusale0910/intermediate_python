@@ -397,6 +397,50 @@
 
 
 
+# # itertools -product, permutations,combination,accumalte ,groupby
+# from itertools import product
+# # itertools just make product kind of something (kind of make pair)
+# list_A=[1,2]
+# list_B=[3,4]
+# prod=product(list_A,list_B) # here 3rd paremter is repeat=2 this aloow repetaion 2 number of times
+# # print(*(prod))
+# print(list(prod))
+
+
+# # permutaion and combination
+# from itertools import permutations
+# from itertools import combinations
+# arr=[1,2,3]
+# per=permutations(arr)
+# per1=permutations(arr,2) # here 2nd argument is len of permutaion which you want to construct this len<=length(arr)
+# print(*per)
+# print(*per1)
+#
+# com1=combinations(arr,2) # here length is mandetory
+# print(*com1)
+# # combination with repetaion allowd
+# from itertools import combinations_with_replacement
+# com_wr=combinations_with_replacement(arr,2)
+# print(*com_wr)
+
+# accumalte this work on list(iterable) can do opration from zero to last index like prefix sum
+# from itertools import accumulate
+# import operator
+# a=[1,2,3,4,5]
+# prefix_sum=accumulate(a)
+# print(list(prefix_sum))
+# # we can give second argument as a function here default is +
+# pre_mul=accumulate(a,func=operator.mul)
+# print(*pre_mul)
+
+# groupby takes 2 argumet 1 is list and 2 is fun groupbt(list1,key=fun_name)
+# depend upon function return type it can create group of element having similer return value
+# ex if we have object of a student and based of gread we want to classiby them tham this method is usefull
+
+
+
+
+
 
 
 
