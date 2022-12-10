@@ -396,7 +396,7 @@
 # print(dq)
 
 
-
+# iertools is not much important
 # # itertools -product, permutations,combination,accumalte ,groupby
 # from itertools import product
 # # itertools just make product kind of something (kind of make pair)
@@ -438,8 +438,67 @@
 # ex if we have object of a student and based of gread we want to classiby them tham this method is usefull
 
 
+# lambda function this is mainly used when function is small and when function which need function as argument
+# syntax
+# lambda argument:expresion
+# add10=lambda x,y,z:x+y+z
+# print(add10(1,2,3))
+
+# in sorted_method use lamda function
+# point2D=[[1,2],[15,1],[5,-1],[10,4]]
+# sort_point2D=sorted(point2D,key=lambda x:x[1]) # sortrd with the help of y coordinate
+# print(point2D)
+# print(sort_point2D)
+#
+# def sum(x):
+#     return x[0]+x[1]
+# sort_point2D=sorted(point2D,key=sum)
+# print(sort_point2D)
+
+# --------- error and exception
+# types of error
+# ValueError , NameError ,SyntaxError ,FilenotfoundError ,IndexError,KeyError,ZeroDivisionError
+
+# how tonthrough an exception with the help of raise keyword
+# a=-5
+# if a<0:
+#     raise  Exception("value of a variable is < 0")
+
+# manually throw an exception
+# try:
+#     a=-5
+#     if(a<0):
+#         raise Exception("less than 0")
+# except Exception as e:
+#     print(e)
+#
+# try:
+#     a=10/1
+#     a=a+'10'
+# except ZeroDivisionError as ze:
+#     print(ze)
+# except ValueError as ve:
+#     print(ve)
+# except Exception as e:
+#     print("error is occured ",e)
+# else:
+#     print("if no error is occured than only this else block is exicuted ")
+# finally:
+#     print("this block is always exucuted independent of an error ")
 
 
+# use can Define your own class
+# class HighValueError(Exception):
+#     pass # also you can define own variable and method
+#
+# def fun(num):
+#     if(num>100):
+#         raise HighValueError('value of argument must be lower than and equal to 100')
+#
+# try:
+#     fun(200)
+# except HighValueError as he:
+#     print(he)
 
 
 
